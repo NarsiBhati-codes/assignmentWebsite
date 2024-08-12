@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cohort 3.0 Assignments</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="avatar">
+            <img src="me.png" alt="Avatar" height="60" width="60">
+        </a>
+
+        <h1 class="gradient-text">Narsi Bhati</h1>
+
+        <div id="icons">
+            <a href="https://linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+    </header>
+
+    <section>
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'Tab1')">VS Code landing page</button>
+            <button class="tab-button" onclick="openTab(event, 'Tab2')">Tab 2</button>
+            <button class="tab-button" onclick="openTab(event, 'Tab3')">Tab 3</button>
+        </div>
+
+        <div id="Tab1" class="tab-content active">
+            <div style="text-align: center; padding: 20px;">
+                <h2 style="padding-bottom: 10px; font-size: 34px;">VS Code landing page</h2>
+                <p style="font-size: 20px;">To create a Visual Studio Code landing page similar to the official one, you
+                    can use a combination of
+                    HTML and CSS tags and elements. Below is a breakdown of the key sections and the corresponding tags
+                    and
+                    code:</p>
+            </div>
+
+            <div class="codes">
+                <div class="code">
+                    <pre>
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Visual Studio Code&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;index.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;nav&gt;
+        &lt;div&gt;
+            &lt;span id=&quot;logo&quot;&gt;
+                &lt;img src=&quot;https://code.visualstudio.com/favicon.ico&quot; alt=&quot;favicon&quot; width=&quot;24&quot;&gt;
+                Visual Studio Code
+            &lt;/span&gt;
+            &lt;a class=&quot;links&quot; href=&quot;&quot;&gt;Docs&lt;/a&gt;
+            &lt;a class=&quot;links&quot; href=&quot;&quot;&gt;Updates&lt;/a&gt;
+            &lt;a class=&quot;links&quot; href=&quot;&quot;&gt;Blog&lt;/a&gt;
+            &lt;a class=&quot;links&quot; href=&quot;&quot;&gt;API&lt;/a&gt;
+            &lt;a class=&quot;links&quot; href=&quot;&quot;&gt;Extensions&lt;/a&gt;
+            &lt;a class=&quot;links&quot; href=&quot;&quot;&gt;FAQ&lt;/a&gt;
+            &lt;a class=&quot;links&quot; href=&quot;&quot;&gt;Learn&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;Search Docs&quot; id=&quot;search&quot;&gt;
+            &lt;button id=&quot;download&quot;&gt;Download&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+    &lt;main&gt;
+        &lt;div id=&quot;line1&quot;&gt;
+            &lt;a href=&quot;&quot;&gt;Version 1.92&lt;/a&gt; Version 1.92 is now available! Read about the new features and fixes from July.
+        &lt;/div&gt;
+        &lt;div id=&quot;landingPage&quot;&gt;
+            &lt;div&gt;
+                &lt;h6 id=&quot;landing1&quot;&gt;
+                    Free. Built on open source. Runs everywhere.
+                &lt;/h6&gt;
+
+                &lt;h1 id=&quot;landing2&quot;&gt;
+                    Code Editing. Redefined.
+                &lt;/h1&gt;
+
+                &lt;button id=&quot;landingBtn&quot;&gt;
+                    Download for macOS
+                &lt;/button&gt;
+
+                &lt;h5 id=&quot;landing3&quot;&gt;
+                    &lt;a href=&quot;&quot;&gt;Web&lt;/a&gt;, &lt;a href=&quot;&quot;&gt;Insiders edition&lt;/a&gt;, or &lt;a href=&quot;&quot;&gt;other platforms&lt;/a&gt;
+                &lt;/h5&gt;
+
+                &lt;h5 id=&quot;landing4&quot;&gt;
+                    By using VS Code, you agree to its &lt;a href=&quot;&quot;&gt;license&lt;/a&gt; and
+                    &lt;a href=&quot;&quot;&gt;privacy statement&lt;/a&gt;.
+                &lt;/h5&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;img src=&quot;home-screenshot-mac-2x-v2.png&quot; alt=&quot;landing image&quot; width=&quot;800&quot; height=&quot;570&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+                    </code>
+                </pre>
+                </div>
+
+
+                <div class="code">
+                    <pre>
+                    <code>
+                        * {
+                            margin: 0;
+                            padding: 0;
+                        }
+                        
+                        body {
+                            background-color: #0e0e0e;
+                            font-family: sans-serif;;
+                        }
+                        
+                        #logo {
+                            color: white;
+                            font-size: 24px;
+                            padding-right: 10px;
+                        }
+                        
+                        nav {
+                            padding: 10px 340px;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        
+                        .links {
+                            text-decoration: none;
+                            color: rgb(178, 178, 178);
+                            padding-left: 10px;
+                            font-weight: 400;
+                        }
+                        
+                        #search {
+                           border: 2px;
+                           border-radius: 5px; 
+                           padding: 10px 30px;
+                           margin-right: 10px;
+                        }
+                        
+                        #download {
+                            border: 2px solid transparent;
+                            border-radius: 5px; 
+                            background-color: #2e75f8;
+                            padding: 6px 30px;
+                            font-weight: bold;
+                            font-size: 17px;
+                            color: white;
+                        }
+                        
+                        #line1 {
+                            display: flex;
+                            justify-content: center;
+                            padding: 27px;
+                            font-size: 15px;
+                            color: rgb(178, 178, 178);
+                        }
+                        
+                        #line1 a {
+                            color: #4986f6;
+                            padding-right: 5px;
+                        }
+                        
+                        #landingPage {
+                            display: flex;
+                            justify-content: space-between;
+                            padding:28px 340px;
+                        }
+                        
+                        #landing1 {
+                            color: rgb(178, 178, 178);
+                            border: 1px solid rgb(178, 178, 178);
+                            border-radius: 20px;
+                            padding: 10px 12px;
+                            text-align: center;
+                            margin-right: 150px;
+                            margin-top: 100px;
+                            font-size: 12px;
+                            background: rgba(255, 255, 255, 0.1);
+                        }
+                        
+                        #landing2 {
+                            padding-top: 20px;
+                            color: white;
+                            font-size: 65px;
+                            font-weight: 500;
+                            
+                        }
+                        
+                        #landingBtn {
+                            border: 2px;
+                            border-radius: 5px; 
+                            background-color: #2e75f8;
+                            padding: 15px 25px;
+                            font-weight: bold;
+                            font-size: 20px;
+                            color: white;
+                            margin-right: 150px;
+                            margin-top: 50px;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        
+                        #landing3 {
+                            color: rgb(178, 178, 178);
+                            padding-top: 15px;
+                        }
+                        
+                        #landing4 {
+                            color: rgb(178, 178, 178);
+                            padding-top: 15px;
+                            font-weight: 100;
+                            font-size: 13px;
+                        }
+                        
+                        #landing3 a ,#landing4 a {
+                            color: #4986f6;
+                        }
+                    </code>
+                </pre>
+                </div>
+            </div>
+            <div id="vsLandingPage">
+                <img src="landingPageVSCode.png" alt="landing page of vs code" width="70%" height="70%">
+            </div>
+        </div>
+
+        <div id="Tab2" class="tab-content">
+            <h2>Syntax of Javascript</h2>
+            <p>This is the content of Tab 2.</p>
+        </div>
+
+        <div id="Tab3" class="tab-content">
+            <h2>Complex types</h2>
+            <p>This is the content of Tab 3.</p>
+        </div>
+
+    </section>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>
